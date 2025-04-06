@@ -15,13 +15,13 @@ export default function HomeScreen() {
   };
 
   return (
-    <div className=" min-vh-100 d-flex align-items-center justify-content-center bg-light pt-5">
-      <div className=" card shadow p-4 w-100" style={{ maxWidth: "950px" }}>
-        <h1 className="text-primary fw-bold mb-2">CodeBuddy.AI 👨‍💻</h1>
-        <p className="text-muted mb-4">Your AI Coding Mentor for Beginners</p>
+    <div className="container py-3" style={{ marginTop: "100px", marginBottom: "80px" }}>
+      <div className="card shadow p-3 mx-auto" style={{ maxWidth: "850px" }}>
+        <h1 className="text-primary fw-bold mb-1">CodeBuddy.AI 👨‍💻</h1>
+        <p className="text-muted mb-3">Your AI Coding Mentor for Beginners</p>
 
-        <form onSubmit={handleSubmit}>
-          <div className="mb-3">
+        <form onSubmit={handleSubmit} className="mb-2">
+          <div className="mb-2">
             <input
               type="text"
               className="form-control"
@@ -44,7 +44,7 @@ export default function HomeScreen() {
         </form>
 
         {response && (
-          <div className="mt-4">
+          <div className="mt-3">
             <h5 className="text-dark mb-2">✨ AI Response:</h5>
             <div
               className="bg-dark text-light p-3 rounded"
@@ -52,6 +52,8 @@ export default function HomeScreen() {
                 whiteSpace: "pre-wrap",
                 fontFamily: "monospace",
                 fontSize: "0.95rem",
+                maxHeight: "40vh",
+                overflowY: "auto"
               }}
             >
               {response}
