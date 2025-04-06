@@ -37,14 +37,14 @@ const RoadmapBuilder = () => {
     const element = pdfRef.current;
 
     const clone = element.cloneNode(true);
-    clone.style.marginTop = "0"; // Remove space at top
-    clone.style.paddingTop = "0"; // Remove space at top
+    clone.style.marginTop = "0"; 
+    clone.style.paddingTop = "0"; 
 
-    // Add site info only for PDF
+    
     const pdfHeader = document.createElement("div");
     pdfHeader.innerHTML = `
       <p style="font-size: 14px; margin-bottom: 10px;">
-        🌐 Visit us: <a href="https://your-site-url.com">https://your-site-url.com</a> |
+        🌐 Visit us: <a href="https://code-buddy-ai.vercel.app">https://code-buddy-ai.vercel.app</a> |
         🔧 Powered by <strong>RoadmapAI</strong>
       </p>
     `;
