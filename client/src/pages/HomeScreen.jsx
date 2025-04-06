@@ -15,8 +15,8 @@ export default function HomeScreen() {
   };
 
   return (
-    <div className="min-vh-100 d-flex align-items-center justify-content-center bg-light pt-5">
-      <div className="card shadow p-4 w-100" style={{ maxWidth: "600px" }}>
+    <div className=" min-vh-100 d-flex align-items-center justify-content-center bg-light pt-5">
+      <div className=" card shadow p-4 w-100" style={{ maxWidth: "950px" }}>
         <h1 className="text-primary fw-bold mb-2">CodeBuddy.AI 👨‍💻</h1>
         <p className="text-muted mb-4">Your AI Coding Mentor for Beginners</p>
 

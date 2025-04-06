@@ -8,8 +8,8 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-      <div className="container-fluid px-4">
+    <nav className="navbar navbar-expand-lg py-4   navbar-light bg-white fixed-top shadow-sm">
+      <div className=" container-fluid px-4 ">
         <Link className="navbar-brand fw-bold text-primary" to="/">
           CodeBuddy.AI 👨‍💻
         </Link>

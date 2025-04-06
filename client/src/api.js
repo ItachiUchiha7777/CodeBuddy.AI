@@ -1,6 +1,6 @@
 // api.js
 export async function askAI(question) {
-    const response = await fetch("http://localhost:5000/api/ask", {
+    const response = await fetch("https://codebuddy-ai-backend.onrender.com/api/ask", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

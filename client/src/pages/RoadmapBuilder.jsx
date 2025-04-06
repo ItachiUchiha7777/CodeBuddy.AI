@@ -14,7 +14,7 @@ const RoadmapBuilder = () => {
     setRoadmap([]);
 
     try {
-      const res = await fetch("http://localhost:5000/api/roadmap", {
+      const res = await fetch("https://codebuddy-ai-backend.onrender.com/api/roadmap", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question: topic }),
@@ -62,7 +62,7 @@ const RoadmapBuilder = () => {
   };
 
   return (
-    <div className="container py-5 mt-5">
+    <div  className="container py-5" style={{ marginTop: "5rem" }}>
       <div className="bg-light p-5 rounded shadow">
         <h2 className="mb-4 text-primary">📍 Roadmap Builder</h2>
         <p className="text-muted mb-4">
