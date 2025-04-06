@@ -14,6 +14,10 @@ MODEL = "models/gemini-1.5-pro"
 URL = f"https://generativelanguage.googleapis.com/v1beta/{MODEL}:generateContent?key={API_KEY}"
 
 
+@app.route("/api/",methods=["GET"])
+def test():
+    return jsonify({"response": "HEllo ITS WORKING"})
+
 @app.route("/api/ask", methods=["POST"])
 def ask_gemini():
     question = request.json.get("question", "")
@@ -54,7 +58,7 @@ def explain_code():
     )
 
     return jsonify({"explanation": explanation})
-    
+
 @app.route("/api/roadmap", methods=["POST"])
 def roadmap():
     question = request.json.get("question", "")
